@@ -1,6 +1,24 @@
 # Cloud_Qa
 Cloud.ru Test task for Qa
 
+Структура тестового задания
+
+```text
+Cloud_Qa/
+├── Task1/
+│   └── Algorithm.py
+├── Task2/
+│   ├── pages/
+│   │   ├── base_page.py
+│   │   └── example_page.py
+│   └── tests/
+│       ├── __init__.py
+│       ├── conftest.py
+│       └── test_main.py
+├── README.md
+└── requirements.txt
+```
+
 1. Склонируйте к себе репозиторий, в котором хранится проект тестового задания, через выполнение команды в терминале
 ```bash
 git clone https://github.com/Jumandjilos/Cloud_Qa.git

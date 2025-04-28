@@ -7,6 +7,11 @@ class BasePage:
         self.browser = browser
 
     def find_elem(self, locator, time=10):
+        '''
+        Находит присутствие локатора и в случае потери локатора
+
+        или истечение времени ожидания выводит сообщение
+        '''
         try:
             element = webdw(self.browser, time).until(
                 ec.presence_of_element_located(locator),
@@ -17,15 +22,9 @@ class BasePage:
             print(e.msg)
             pass
 
-    def new_window(self, browser):
-        return self.browser.switch_to.window(browser.window_handles[1])
-
     def title_is_change(self,browser, word):
         title = WebDriverWait(browser, 5).until(ec.title_contains(word))
         return title
-
-    def scroll(self, btn):
-        return self.browser.execute_script("return arguments[0].scrollIntoView(true);", btn)
 
     def get_page_url(self) -> str:
         return self.browser.current_url

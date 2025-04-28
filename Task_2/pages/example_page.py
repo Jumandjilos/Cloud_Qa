@@ -1,7 +1,5 @@
-from base_page import BasePage
+from Task_2.pages.base_page import BasePage
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 class ExampleLocator:
     more_information = (By.CSS_SELECTOR, "a[href='https://www.iana.org/domains/example']")

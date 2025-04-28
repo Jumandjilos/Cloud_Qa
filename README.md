@@ -45,7 +45,7 @@ pip3 install -r requirements
 ```
 5. Запустите скрипт Algorithm и введите свои цифры для проверки работы скрипта
 ```bash
-python Task_1\algorithm.py
+python task_1\algorithm.py
 ```
 
 6. Наконец, запустите тест сайта, выполнив команду

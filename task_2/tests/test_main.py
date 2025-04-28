@@ -1,4 +1,4 @@
-from Task_2.pages.example_page import ExamplePage
+from task_2.pages.example_page import ExamplePage
 
 
 def test(browser):

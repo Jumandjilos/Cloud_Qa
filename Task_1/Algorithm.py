@@ -8,6 +8,7 @@ def read_and_trasform_numbers():
     s = s.split()
     return [int(x) for x in s]
 
+
 def filter_evens(numbers):
     """ Возвращает список с только чётными числами """
     evens = []
@@ -16,14 +17,20 @@ def filter_evens(numbers):
             evens.append(x)
     return evens
 
+
 def find_max_and_min(numbers):
     """ Находит в списке наибольшее и наименьшее число """
     max_number = max(numbers)
     min_number = min(numbers)
     return max_number, min_number
 
+
 def sorted_numbers(numbers):
-    """ Сортирует список от наименьше к наибольшему без использования функции sorted() """
+    """
+    Сортирует список от наименьшего к наибольшему
+
+    без использования функции sorted()
+    """
     spisok = []
     copy_list = numbers.copy()
     for x in range(len(numbers)):
@@ -31,6 +38,7 @@ def sorted_numbers(numbers):
         spisok.append(n)
         copy_list.remove(n)
     return spisok
+
 
 def main():
     """ Реализует поставленные задачи и выводит их в консоль """

@@ -5,9 +5,9 @@ Cloud.ru Test task for Qa
 
 ```text
 Cloud_Qa/
-├── Task1/
-│   └── Algorithm.py
-├── Task2/
+├── task1/
+│   └── algorithm.py
+├── task2/
 │   ├── pages/
 │   │   ├── base_page.py
 │   │   └── example_page.py
@@ -37,23 +37,18 @@ cd /Cloud_Qa
 ```
 4. Установите необходимые зависимости из файла requirements.txt, выполнив команду
 ```bash
-pip install -r requirements.txt
+pip install -r requirements
 ```
 если она не выполняется, то попробуйте
 ```bash
-pip3 install -r requirements.txt
+pip3 install -r requirements
 ```
 5. Запустите скрипт Algorithm и введите свои цифры для проверки работы скрипта
 ```bash
-python Algorithm.py 
+python task_1\algorithm.py
 ```
 
-5. После успешной установки зависимостей, установите необходимые бинарные файлы браузеров, выполнив команду
-
-```bash
-Selenium install
-```
-6. Наконец, запустите тесты, выполнив команду
+6. Наконец, запустите тест сайта, выполнив команду
 ```bash
 pytest -v
 ```
